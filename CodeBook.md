@@ -34,7 +34,6 @@ extract: Dataframe that extracted the measurements on the mean and standard devi
 
 tidydata: Dataframe that contains the average of each variable for each activity and each subject from the extract dataset
 
-
 Data are first downloaded, then read in as individual variables of dataframes.
 Test and train sets are then combined to create one data set with descriptive activity names to name the activities in the data set, and labels the data set with descriptive variable names. 
 Activity were labelled as numbers 1 to 6 in the dataset, and is then transformed to descriptive variables names. Each column of train_data and test_data is the data for each feature in the features dataframe, and is then labelled using the activity_labels dataframe. After which, only the measurements on the mean and standard deviation for each measurement is extracted as a new dataframe named 'extract'. Features_names is created with the list of features that are to be extracted and used as for extracting data from the 'dataset' with features inside this variable.
