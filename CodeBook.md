@@ -39,4 +39,43 @@ Test and train sets are then combined to create one data set with descriptive ac
 Activity were labelled as numbers 1 to 6 in the dataset, and is then transformed to descriptive variables names. Each column of train_data and test_data is the data for each feature in the features dataframe, and is then labelled using the activity_labels dataframe. After which, only the measurements on the mean and standard deviation for each measurement is extracted as a new dataframe named 'extract'. Features_names is created with the list of features that are to be extracted and used as for extracting data from the 'dataset' with features inside this variable.
 Using 'extract', a second, independent tidy data set with the average of each variable for each activity and each subject is created named 'tidydata'. The result is then saved as a text file in the repo.
 
+Features Variables:
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+
+
+
 The result of tidydata is also saved as a text file in this repo as tidydata.txt
